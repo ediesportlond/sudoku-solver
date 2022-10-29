@@ -3,7 +3,7 @@ const solver = (sudoku) => {//Set block
     const getBlockNumber = (row, col) => {
         let block = "";
         row < 3     //if in first 3 rows
-            ? col < 3   //and first three rows
+            ? col < 3   //and first three columns
                 ? block = 1     //you are in block 1
                 : col < 6       //if first 3 rows and next three columns
                     ? block = 2        //you are in block 2
